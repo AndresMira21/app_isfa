@@ -1,0 +1,347 @@
+.horarios-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 1rem 0.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horarios-container h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.curso-selector {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.curso-selector label {
+  display: block;
+  margin-bottom: 0.375rem;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.85rem;
+}
+
+.curso-selector select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.curso-selector select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.horario-detalle {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.horario-detalle h2 {
+  color: #333;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.horario-info {
+  margin-bottom: 1rem;
+}
+
+.horario-info p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.horario-imagen h3 {
+  color: #333;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.horario-imagen img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 70vh;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.mensaje-inicial {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.mensaje-inicial p {
+  font-size: 0.95rem;
+  color: #333;
+  font-style: italic;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .horarios-container {
+    padding: 0.75rem 0.25rem;
+  }
+  
+  .horarios-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .curso-selector {
+    padding: 0.875rem;
+    max-width: 350px;
+  }
+  
+  .curso-selector label {
+    font-size: 0.8rem;
+  }
+  
+  .curso-selector select {
+    font-size: 0.8rem;
+  }
+  
+  .horario-detalle {
+    padding: 0.875rem;
+    max-width: 100%;
+  }
+  
+  .horario-detalle h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.625rem;
+  }
+  
+  .horario-info p {
+    font-size: 0.9rem;
+  }
+  
+  .horario-imagen h3 {
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+  }
+  
+  .horario-imagen img {
+    max-height: 60vh;
+    border-radius: 6px;
+  }
+  
+  .mensaje-inicial {
+    padding: 1.25rem;
+    max-width: 100%;
+  }
+  
+  .mensaje-inicial p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .horarios-container {
+    padding: 0.5rem 0.125rem;
+  }
+  
+  .horarios-container h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .curso-selector {
+    padding: 0.75rem;
+    max-width: 300px;
+  }
+  
+  .curso-selector label {
+    font-size: 0.75rem;
+  }
+  
+  .curso-selector select {
+    font-size: 0.75rem;
+  }
+  
+  .horario-detalle {
+    padding: 0.75rem;
+  }
+  
+  .horario-detalle h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .horario-info p {
+    font-size: 0.85rem;
+  }
+  
+  .horario-imagen h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .horario-imagen img {
+    max-height: 50vh;
+    border-radius: 4px;
+  }
+  
+  .mensaje-inicial {
+    padding: 1rem;
+  }
+  
+  .mensaje-inicial p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .horarios-container {
+    padding: 0.375rem 0.0625rem;
+  }
+  
+  .horarios-container h1 {
+    font-size: 1.2rem;
+  }
+  
+  .curso-selector {
+    padding: 0.625rem;
+    max-width: 280px;
+  }
+  
+  .curso-selector label {
+    font-size: 0.7rem;
+  }
+  
+  .curso-selector select {
+    font-size: 0.7rem;
+  }
+  
+  .horario-detalle {
+    padding: 0.625rem;
+  }
+  
+  .horario-detalle h2 {
+    font-size: 1rem;
+  }
+  
+  .horario-info p {
+    font-size: 0.8rem;
+  }
+  
+  .horario-imagen h3 {
+    font-size: 0.9rem;
+  }
+  
+  .horario-imagen img {
+    max-height: 45vh;
+    border-radius: 4px;
+  }
+  
+  .mensaje-inicial {
+    padding: 0.875rem;
+  }
+  
+  .mensaje-inicial p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Landscape mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+  .horarios-container {
+    padding: 0.5rem 0.25rem;
+  }
+  
+  .horarios-container h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .curso-selector {
+    padding: 0.75rem;
+    max-width: 350px;
+  }
+  
+  .horario-detalle {
+    padding: 0.75rem;
+  }
+  
+  .horario-imagen img {
+    max-height: 40vh;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .horarios-container {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .horarios-container h1 {
+    font-size: 1.8rem;
+  }
+  
+  .curso-selector {
+    padding: 1.25rem;
+    max-width: 450px;
+  }
+  
+  .horario-detalle {
+    padding: 1.25rem;
+    max-width: 550px;
+  }
+  
+  .horario-imagen img {
+    max-height: 65vh;
+  }
+}
